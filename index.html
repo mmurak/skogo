@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>小学館古語大辞典（1983）検索</title>
+		<link rel="shortcut icon" href="redKiwiBird.png">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<style>
+			.toc-field{
+				font-size: 150%;
+				width: 100%;
+			}
+			.entry-field{
+				font-size: 150%;
+				width: 100%;
+			}
+			.buttons{
+				width: 48%;
+				min-width: 100px;
+				max-width: 400px;
+				padding: 10px 8px 10px 8px;
+				font-size: 110%;
+				box-sizing: border-box;
+				border: 1px solid #68779a;
+				background: #cbe8fa;
+				cursor: pointer;
+			}
+			.buttons:active {
+				box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+				transform: translateY(2px);
+			}
+		</style>
+	</head>
+	<body>
+		<p style="font-size: 150%;">『小学館古語大辞典』検索ヘルパー</p>
+		<select class="toc-field" id="TOCSel" onchange="tocChange(this.value);"/>
+		<input type="text" id="EntryField" class="entry-field" placeholder="全角ひらがなで検索語を入力"/><br/>
+		<input type="button" id="SearchButton" class="buttons" value="検索（Enter）" onclick="search();"/>
+		<input type="button" id="clearButton" class="buttons" value="クリア（Esc）" onclick="clearField();"/>
+		<p>※このアプリは検索語を入力すると、ブラウザ上の別タブで『小学館古語大辞典』（1983）の該当ページが開くというものですが、国立国会図書館様のプロジェクトではありません。</p>
+		<p>※『小学館古語大辞典』は国立国会図書館様の「個人向けデジタル化資料送信サービス」で閲覧できる書籍のため、該当ページを閲覧するにはこのサービスに登録し、ブラウザ上でログインしておく必要があります。</p>
+		<script src="./resources/index.js"></script>
+		<script src="./scripts/main.js"></script>
+    </body>
+</html>
+
